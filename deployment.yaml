@@ -1,0 +1,21 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata: 
+  name: hello-world-deployment
+spec: 
+  replicas: 1
+  selector: 
+    matchLabels: 
+      application: hello-world
+  template: 
+    metadata: 
+      labels: 
+        app: hello-world-deployment
+    spec: 
+      containers: 
+          image: "daemonza/testapi:latest"
+          imagePullPolicy: Always
+          name: hello-world-container
+          ports: 
+            - 
+              containerPort: 8080
