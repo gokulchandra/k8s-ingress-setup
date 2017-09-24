@@ -4,18 +4,14 @@ metadata:
   name: hello-world-deployment
 spec: 
   replicas: 1
-  selector: 
-    matchLabels: 
-      application: hello-world
   template: 
     metadata: 
       labels: 
-        app: hello-world-deployment
+        app: hello-world
     spec: 
       containers: 
-          image: "daemonza/testapi:latest"
+        - image: "daemonza/testapi:latest"
           imagePullPolicy: Always
           name: hello-world-container
           ports: 
-            - 
-              containerPort: 8080
+            - containerPort: 8080
