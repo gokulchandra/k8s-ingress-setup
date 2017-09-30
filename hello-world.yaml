@@ -10,7 +10,7 @@ spec:
         app: hello-world
     spec: 
       containers: 
-        - image: "daemonza/testapi:latest"
+        - image: "gokul93/hello-world:latest"
           imagePullPolicy: Always
           name: hello-world-container
           ports: 
