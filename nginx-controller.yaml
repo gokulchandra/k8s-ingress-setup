@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata: 
   name: nginx-ingress-controller
-  namespace: kube-system
+  namespace: default
 spec: 
   replicas: 1
   revisionHistoryLimit: 3

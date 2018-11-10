@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata: 
   name: hello-world-svc
-  namespace: kube-system
+  namespace: default
 spec: 
   ports: 
      -  port: 8080

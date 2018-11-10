@@ -10,9 +10,9 @@ echo "Created SSL cert"
 echo "start minikube"
 minikube start
 
-kubectl create secret tls tls-certificate --key tls-key.key --cert tls-cert.crt
+kubectl create secret tls tls-certificate --key tls-key.key --cert tls-cert.crt --name-space default
 
-kubectl create secret generic tls-dhparam --from-file=dhparam.pem
+kubectl create secret generic tls-dhparam --from-file=dhparam.pem --name-space default
 
 kubectl create -f .
 
