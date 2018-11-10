@@ -13,7 +13,7 @@ Assuming that you already have Kubectl and Minikube setup, you can simply run th
 The certificate is self signed and hence will throw an SSL error. Bypass this using ***-k*** option of ***Curl***.
 
 
-# corrections
+# updates
 - added nginx-roles.yml
 - with rbac namespace are mandatory. added namespaces to all 
-- get minikube ip: `minikube service nginx-ingress --url --namespace=kube-system`
+- get minikube ip: `minikube service nginx-ingress --url`
