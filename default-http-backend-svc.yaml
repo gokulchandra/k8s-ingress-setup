@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: default-http-backend
+  namespace: kube-system
 spec:
   selector:
     app: default-http-backend
