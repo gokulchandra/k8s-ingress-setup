@@ -48,4 +48,4 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: nginx
-  namespace: kube-system
+  namespace: default
